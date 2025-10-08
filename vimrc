@@ -22,7 +22,16 @@ augroup ansible_playbook
         \ '    # - name: Install Apache',
         \ '    #   package:',
         \ '    #     name: httpd',
-        \ '    #     state: present'
+        \ '    #     state: present',
+        \ '    # - name: Start Apache',
+        \ '    #   service:',
+        \ '    #     name: httpd',
+        \ '    #     state: present',
+        \ '    #     enabled: yes',
+        \ '  # handlers:',
+        \ '  #   - name: restart apache:',
+        \ '  #     service: httpd',
+        \ '    #   state: restarted'
         \ ])
 augroup END
 set tabstop=2 
