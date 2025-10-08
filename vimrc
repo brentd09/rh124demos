@@ -31,7 +31,7 @@ augroup ansible_playbook
         \ '  # handlers:',
         \ '  #   - name: restart apache:',
         \ '  #     service: httpd',
-        \ '    #   state: restarted'
+        \ '  #     state: restarted'
         \ ])
 augroup END
 set tabstop=2 
