@@ -27,11 +27,7 @@ augroup ansible_playbook
         \ '  #     service:',
         \ '  #       name: httpd',
         \ '  #       state: started',
-        \ '  #       enabled: yes',
-        \ '  # handlers:',
-        \ '  #   - name: restart apache:',
-        \ '  #     service: httpd',
-        \ '  #     state: restarted'
+        \ '  #       enabled: yes'
         \ ])
 augroup END
 set tabstop=2 
