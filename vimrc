@@ -13,10 +13,16 @@ augroup ansible_playbook
         \ '  # become_user: root             # Become this user for privileged escalation',
         \ '  # connection: ssh               # How to connect to mananged hosts',
         \ '  # gather_facts: yes             # Gathers information from the managed host that are stored in ansible variables',
+        \ '  # vars:                         # Set variables that will be used in the playbook',
+        \ '  #   http_port: 80',
         \ '  tasks:',
         \ '    - name: Example task',
         \ '      debug:',
-        \ '        msg: "Hello, Ansible!"'
+        \ '        msg: "Hello, Ansible!"',
+        \ '    # - name: Install Apache',
+        \ '    #     package:',
+        \ '    #       name: httpd',
+        \ '    #       state: present'
         \ ])
 augroup END
 set tabstop=2 
