@@ -26,7 +26,7 @@ augroup ansible_playbook
         \ '    # - name: Start Apache',
         \ '    #   service:',
         \ '    #     name: httpd',
-        \ '    #     state: present',
+        \ '    #     state: started',
         \ '    #     enabled: yes',
         \ '  # handlers:',
         \ '  #   - name: restart apache:',
