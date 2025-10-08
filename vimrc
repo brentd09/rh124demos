@@ -20,9 +20,9 @@ augroup ansible_playbook
         \ '      debug:',
         \ '        msg: "Hello, Ansible!"',
         \ '    # - name: Install Apache',
-        \ '    #     package:',
-        \ '    #       name: httpd',
-        \ '    #       state: present'
+        \ '    #   package:',
+        \ '    #     name: httpd',
+        \ '    #     state: present'
         \ ])
 augroup END
 set tabstop=2 
