@@ -6,8 +6,13 @@ augroup ansible_playbook
   autocmd!
   autocmd BufNewFile *.yml,*.yaml call append(0, [
         \ '---',
-        \ '- hosts: all',
-        \ '  become: yes',
+        \ '- name: NameOfPlayBook            # The name given to this playbook',
+        \ '  hosts: all                      # Which hosts to run this playbook on',
+        \ '  # become: yes                   # Privileged escalation needed',
+        \ '  # remote_user: root             # Ansible connects as this user',
+        \ '  # become_user: root             # Become this user for privileged escalation',
+        \ '  # connection: ssh               # How to connect to mananged hosts',
+        \ '  # gather_facts: yes             # Gathers information from the managed host that are stored in ansible variables',
         \ '  tasks:',
         \ '    - name: Example task',
         \ '      debug:',
