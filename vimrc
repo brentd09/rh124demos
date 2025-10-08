@@ -1,6 +1,5 @@
 syntax on
 filetype plugin indent on
-plug 'pearofducks/ansible-vim'
 autocmd BufRead,BufNewFile *.sh set filetype=sh
 autocmd BufNewFile *.sh call append(0, '#!/bin/bash')
 augroup ansible_playbook
