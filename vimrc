@@ -8,9 +8,9 @@ augroup ansible_playbook
         \ '---',
         \ '- name: NameOfPlayBook            # The name given to this playbook',
         \ '  hosts: all                      # Which hosts to run this playbook on',
-        \ '  # become: yes                   # Privileged escalation needed',
+        \ '  # become: true                  # Privileged escalation needed',
         \ '  # become_user: root             # Become this user for privileged escalation',
-        \ '  # gather_facts: yes             # Gathers information from the managed host that are stored in ansible variables',
+        \ '  # gather_facts: true            # Gathers information from the managed host that are stored in ansible variables',
         \ '  # remote_user: root             # Ansible connects as this user',
         \ '  # connection: ssh               # How to connect to mananged hosts',
         \ '  # vars:                         # Set variables that will be used in the playbook',
@@ -27,7 +27,7 @@ augroup ansible_playbook
         \ '  #     service:',
         \ '  #       name: httpd',
         \ '  #       state: started',
-        \ '  #       enabled: yes'
+        \ '  #       enabled: true'
         \ ])
 augroup END
 set tabstop=2 
